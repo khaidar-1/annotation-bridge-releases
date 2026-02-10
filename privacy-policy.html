@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annotation Bridge — Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+      color: #1a1a1a;
+    }
+    h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.3rem; margin-top: 2rem; }
+    .updated { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+    ul { padding-left: 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+    code { background: #f0f0f0; padding: 0.15em 0.4em; border-radius: 3px; font-size: 0.9em; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <h1>Annotation Bridge — Privacy Policy</h1>
+  <p class="updated">Last updated: February 10, 2026</p>
+
+  <h2>Overview</h2>
+  <p>
+    Annotation Bridge is a browser extension that captures text highlights and page metadata
+    from web pages and sends them to the Annotation Bridge desktop application running on
+    <strong>your own computer</strong>. No data is sent to any external server.
+  </p>
+
+  <h2>Data Collection</h2>
+  <p>Annotation Bridge does <strong>not</strong> collect, store, or transmit any personal data
+    to external servers. All captured data (highlighted text, page title, URL, author, and
+    publication metadata) is sent exclusively to <code>http://127.0.0.1</code> or
+    <code>http://localhost</code> — your own machine.</p>
+  <ul>
+    <li>No analytics or telemetry</li>
+    <li>No third-party tracking scripts</li>
+    <li>No cookies set by the extension</li>
+    <li>No remote servers contacted</li>
+  </ul>
+
+  <h2>Permissions Explained</h2>
+  <ul>
+    <li><strong>activeTab</strong> — Read the current page's content when you make a selection. Only activated by user action.</li>
+    <li><strong>storage</strong> — Persist your server port preference and offline annotation queue locally in the browser.</li>
+    <li><strong>contextMenus</strong> — Add a "Save to Annotation Bridge" option to the right-click menu.</li>
+    <li><strong>alarms</strong> (Chrome only) — Retry sending queued annotations when the desktop app was temporarily offline.</li>
+    <li><strong>host_permissions (localhost)</strong> — Send captured annotations to the Annotation Bridge desktop app on your machine.</li>
+  </ul>
+
+  <h2>Data Storage</h2>
+  <p>
+    The extension stores two items in your browser's local storage:
+  </p>
+  <ul>
+    <li><strong>Server port</strong> — The port number for the local desktop app (default: 24242).</li>
+    <li><strong>Offline queue</strong> — Annotations captured while the desktop app is not running, automatically flushed when the app becomes available.</li>
+  </ul>
+  <p>All stored data remains on your device and is never transmitted externally.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>Annotation Bridge does not integrate with or send data to any third-party services.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If this policy is updated, the changes will be posted on this page with an updated date.</p>
+
+  <h2>Contact</h2>
+  <p>
+    For questions about this privacy policy, please open an issue at
+    <a href="https://github.com/khaidar-1/annotation-bridge-releases/issues">
+      github.com/khaidar-1/annotation-bridge-releases/issues</a>.
+  </p>
+</body>
+</html>
